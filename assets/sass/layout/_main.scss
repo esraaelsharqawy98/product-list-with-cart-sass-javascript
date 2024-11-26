@@ -1,0 +1,26 @@
+main{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 1.875rem  1.5rem;
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+}
+// tablet
+@media screen and  (min-width: 50.625em){  /* >= 810px */
+    main{
+        padding-inline: 4rem;
+        
+    }
+}
+// desktop
+@media screen and (min-width: 75em){  /* >= 1200px */
+    main{
+        padding:5.3125rem 7rem;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+

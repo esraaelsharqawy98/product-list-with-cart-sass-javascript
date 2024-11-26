@@ -1,0 +1,21 @@
+.product-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; 
+    h1{
+        font-size: 2.5rem;
+        font-weight: $fw-bold;
+        margin-bottom: 1.875rem;
+        color: $rose-900;
+    }
+}
+// desktop
+@media screen and (min-width: 75em) {
+    .product-container{
+        h1{
+            font-size: 2.5rem;
+        }
+    }
+    
+}

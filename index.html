@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Product list with cart</title>
+  <link rel="stylesheet" href="./assets/sass/main.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <section class="product-container">
+      <h1> Desserts </h1>
+      <div class="products">
+        <div class="product-card">
+          <div class="product-img">
+            <picture>
+              <source srcset="./assets/images/image-waffle-desktop.jpg" media="min-width:75em" type="image/jpg">
+              <source srcset="./assets/images/image-waffle-tablet.jpg" media="min-width:50em" type="image/jpg">
+              <img src="./assets/images/image-waffle-mobile.jpg" alt="image-waffle">
+            </picture>
+            <button class="button">
+              <img src="./assets/images/icon-add-to-cart.svg" alt="add to cart icon">
+              Add to Cart</button>
+          </div>
+          <div class="product-content">
+            <h5 class="category">Waffle</h5>
+            <h4 class="title">Waffle with Berries</h4>
+            <span class="price">$6.50</span>
+          </div>
+         
+        </div>
+        <div class="product-card">
+          <div class="product-img">
+            <picture>
+              <source srcset="./assets/images/image-waffle-desktop.jpg" media="min-width:75em" type="image/jpg">
+              <source srcset="./assets/images/image-waffle-tablet.jpg" media="min-width:50em" type="image/jpg">
+              <img src="./assets/images/image-waffle-mobile.jpg" alt="image-waffle">
+            </picture>
+            <button class="button">
+              <img src="./assets/images/icon-add-to-cart.svg" alt="add to cart icon">
+              Add to Cart</button>
+          </div>
+          <div class="product-content">
+            <h5 class="category">Waffle</h5>
+            <h4 class="title">Waffle with Berries</h4>
+            <span class="price">$6.50</span>
+          </div>
+         
+        </div>
+        <div class="product-card">
+          <div class="product-img">
+            <picture>
+              <source srcset="./assets/images/image-waffle-desktop.jpg" media="min-width:75em" type="image/jpg">
+              <source srcset="./assets/images/image-waffle-tablet.jpg" media="min-width:37.5em" type="image/jpg">
+              <img src="./assets/images/image-waffle-mobile.jpg" alt="image-waffle">
+            </picture>
+            <button class="button">
+              <img src="./assets/images/icon-add-to-cart.svg" alt="add to cart icon">
+              Add to Cart</button>
+          </div>
+          <div class="product-content">
+            <h5 class="category">Waffle</h5>
+            <h4 class="title">Waffle with Berries</h4>
+            <span class="price">$6.50</span>
+          </div> 
+        </div>
+       
+      </div>
+    </section>
+    <section class="cart">
+          <h2>Your Cart ( 0 )</h2>
+          <!-- <div class="cart-content">
+            <div class="cart-item">
+              <div class="cart-item-content">
+                <h4 class="title">Waffle with Berries</h4>
+                <div class="cart-item-price">
+                  <span class="quantity">1x</span><span class="price">@ $6.50</span><span class="total">$6.50</span></div>
+              </div>
+              <div class="cart-item-action">
+                  <button class="remove-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" viewBox="0 0 10 10"><path fill="#CAAFA7" d="M8.375 9.375 5 6 1.625 9.375l-1-1L4 5 .625 1.625l1-1L5 4 8.375.625l1 1L6 5l3.375 3.375-1 1Z"/></svg>
+                  </button>
+              </div>
+            </div>
+            <div class="cart-item">
+              <div class="cart-item-content">
+                <h4 class="title">Waffle with Berries</h4>
+                <div class="cart-item-price">
+                  <span class="quantity">1x</span><span class="price">@ $6.50</span><span class="total">$6.50</span></div>
+              </div>
+              <div class="cart-item-action">
+                  <button class="remove-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" viewBox="0 0 10 10"><path fill="#CAAFA7" d="M8.375 9.375 5 6 1.625 9.375l-1-1L4 5 .625 1.625l1-1L5 4 8.375.625l1 1L6 5l3.375 3.375-1 1Z"/></svg>
+                  </button>
+              </div>
+            </div>
+            <div class="cart-total">
+              <span class="total-price">
+                order total
+                <span class="price">$46.50</span>
+              </span>
+            </div>
+            <div class="shipping">
+                <img src="./assets/images/icon-carbon-neutral.svg" alt="icon-carbon-neutral">
+                <p>
+                  this is a <span>carbon-neutal</span> delivery
+                </p>
+            </div>
+            <div class="checkout">
+              <button class="checkout-button">
+                   confirm order
+              </button>
+            </div>
+          </div> -->
+          <div class="empty">
+            <img src="./assets/images/illustration-empty-cart.svg" alt="illustration-empty-cart">
+            Your added items will appear here
+          </div>
+    </section>
+    <section class="lightbox">
+      <div class="lightbox-content">
+        <div class="lightbox-header">
+            <img src="./assets/images/icon-order-confirmed.svg" alt="icon-order-confirmed">
+            <h2>Order Confirmed</h2>
+            <p>
+              We hope you enjoy your food!
+            </p>
+        </div>
+        <div class="orders">
+            <div class="order-item">
+               <img src="./assets/images/image-baklava-thumbnail.jpg" alt="order image">
+               <div class="order-item-content">
+                   <h4 class="title">Baklava</h4>
+                   <div class="order-item-price">
+                      <span class="quantity">1x</span><span class="price">@ $8.50</span>
+                   </div>
+               </div>
+               <span class="order-item-total">$5.50</span>
+            </div>
+            <div class="order-item">
+              <img src="./assets/images/image-baklava-thumbnail.jpg" alt="order image">
+              <div class="order-item-content">
+                  <h4 class="title">Baklava</h4>
+                  <div class="order-item-price">
+                     <span class="quantity">1x</span><span class="price">@ $8.50</span>
+                  </div>
+              </div>
+              <span class="order-item-total">$5.50</span>
+           </div>
+           <div class="order-item">
+            <img src="./assets/images/image-baklava-thumbnail.jpg" alt="order image">
+            <div class="order-item-content">
+                <h4 class="title">Baklava</h4>
+                <div class="order-item-price">
+                   <span class="quantity">1x</span><span class="price">@ $8.50</span>
+                </div>
+            </div>
+            <span class="order-item-total">$5.50</span>
+         </div>
+            <div class="order-total">
+              <span class="total-price">
+                order total
+                <span class="price">$46.50</span>
+              </span>
+            </div>
+        </div>
+        <div class="lightbox-footer">
+            <button class="order-button">
+                 start new order
+            </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+.products{
+    @include grid-container;
+    grid-template-columns: 1fr;
+}
+
+// tablet
+@media  screen and (min-width:600px) {
+    .products{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+// desktop
+@media  screen and (min-width:75em) {
+    .products{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+
